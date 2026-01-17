@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои ссылки</title>
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #020617;
+            --accent: #38bdf8;
+            --text: #e5e7eb;
+            --muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #020617, #0f172a);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background: var(--card);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 20px 40px rgba(0,0,0,.4);
+            text-align: center;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+            border: 2px solid var(--accent);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        p {
+            margin: 8px 0 24px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: var(--text);
+            padding: 14px;
+            border-radius: 12px;
+            background: rgba(56,189,248,0.08);
+            border: 1px solid rgba(56,189,248,0.2);
+            transition: all .2s ease;
+            font-weight: 500;
+        }
+
+        .link:hover {
+            background: rgba(56,189,248,0.2);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 24px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Аватар -->
+    <img
+        class="avatar"
+        src="https://avatars.githubusercontent.com/u/60073871?v=4"
+        alt="avatar"
+    />
+
+    <!-- Имя и описание -->
+    <h1>Алексей/borsch</h1>
+    <p>CyberSec Student · CTF · OSINT · Aviation Enthusiast</p>
+
+    <!-- Ссылки -->
+    <div class="links">
+        <a class="link" href="https://t.me/borsch_krd" target="_blank">Telegram</a>
+        <a class="link" href="https://github.com/borsch-krd" target="_blank">GitHub</a>
+        <a class="link" href="https://x.com/username" target="_blank">X (Twitter)</a>
+        <a class="link" href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+        <a class="link" href="https://your-site.com" target="_blank">Личный сайт</a>
+    </div>
+
+    <footer>
+        © 2026 · one-page, zero bullshit
+    </footer>
+</div>
+
+</body>
+</html>
